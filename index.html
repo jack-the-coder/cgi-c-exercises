@@ -8,10 +8,22 @@
 <body>
 <h1>CGI Control Interface</h1>
 <p>Note: If the URL of this page includes "*.github.io", then the CGI programs will not work. </p>
+  <p>Everything on this page is modified from <a href="https://www.cs.tut.fi/~jkorpela/forms/cgic.html">https://www.cs.tut.fi/~jkorpela/forms/cgic.html</a></p>
 <form action="cgi-bin/first-cgi.cgi">
 <div><label>Multiplicand 1: <input name="m" size="5"></label></div>
 <div><label>Multiplicand 2: <input name="n" size="5"></label></div>
 <div><input type="submit" value="Multiply"></div>
+  
+  </FORM>
+  <FORM ACTION="cgi-bin/collect.cgi" METHOD="POST">
+<DIV>Your input (80 chars max.):<BR>
+<INPUT NAME="data" SIZE="60" MAXLENGTH="80"><BR>
+<INPUT TYPE="SUBMIT" VALUE="Send"></DIV>
+
+</form>
+  
+  <form action="cgi-bin/viewdata.cgi">
+<div><input type="submit" value="View"></div>
 </form>
 </body>
 </html>
